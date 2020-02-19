@@ -1,0 +1,69 @@
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'montserrat';
+}
+
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+    }
+    .content{
+        display: grid;
+        grid-template: 50px 1fr/1fr;
+
+        .days-of-week{
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            justify-content: center;
+            align-items: center;
+            
+            h4{
+                border: 1px solid black;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .calendar-squares{
+            display: grid;
+            grid-template: repeat(5,1fr) / repeat(7, 1fr);
+
+            .calendar-square{
+                display: grid;
+                grid-template: 25px 1fr / 25px 1fr;
+                height: 120px;
+                border: 1px solid black;
+
+                input{
+                    grid-column-start: 1;
+                    grid-column-end: -1;
+                    grid-row-start: 2;
+                    grid-row-end: -1;
+                    border: 1px solid gray;
+                }
+                
+                div{
+                    border: 1px solid gray;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
