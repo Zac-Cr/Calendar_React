@@ -41,7 +41,7 @@
         }
         .calendar-squares{
             display: grid;
-            grid-template: repeat(5,1fr) / repeat(7, 1fr);
+            grid-template: repeat(6,1fr) / repeat(7, 1fr);
 
             .calendar-square{
                 display: grid;
@@ -63,6 +63,9 @@
                     justify-content: center;
                     align-items: center;
                 }
+            }
+            .overflow-day {
+                color: gray;                  
             }
         }
     }

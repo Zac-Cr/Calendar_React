@@ -7,7 +7,10 @@ export default function content(props){
     return(
         <div className = "content">
             <DaysOfWeek />
-            <CalendarSquares daysInMonth={props.daysInMonth}/>
+            <CalendarSquares daysInMonth={props.daysInMonth}
+                daysInPreviousMonth={props.daysInPreviousMonth}
+                startDay={props.startDay}
+            />
         </div>
     )
 }
