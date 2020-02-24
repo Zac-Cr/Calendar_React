@@ -2,6 +2,7 @@ import React from "react"
 
 import DaysOfWeek from "./daysOfWeek"
 import CalendarSquares from "./calendarSquares"
+import monthData from "../../../static/assets/monthData"
 
 export default function content(props){
     return(
@@ -10,6 +11,9 @@ export default function content(props){
             <CalendarSquares daysInMonth={props.daysInMonth}
                 daysInPreviousMonth={props.daysInPreviousMonth}
                 startDay={props.startDay}
+                month={props.month}
+                year={props.year}
+
             />
         </div>
     )

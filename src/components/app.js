@@ -30,6 +30,8 @@ export default class App extends Component {
        <Content daysInMonth= {this.state.daysInMonth} 
           daysInPreviousMonth={this.state.daysInPreviousMonth}
           startDay= {this.state.startDay}
+          month={this.state.month}
+          year={this.state.year}
           />
        <div className="footer">
           <h3>{this.state.year}</h3>
